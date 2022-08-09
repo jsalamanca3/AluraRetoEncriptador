@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+body {
+    background: #E5E5E5;
+    padding: 1px;
+    margin: 1px;
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.columnXs {
+    width: 100%;
+    height: auto;
+    margin: 20px 0px 0px 0px;
+}
+
+.logo {
+    position: relative;
+    width: 120px;
+    height: 48px;
+    top: 1em;
+}
+
+textarea {
+    background: transparent;
+    border: none;
+    width: 107%;
+    height: 108%;
+    color: #0a3871;
+    font-size: 2.6rem;
+    resize: none
+}
+
+textarea::-webkit-input-placeholder {
+    color: #0a3871;
+}
+
+textarea:focus {
+    border: none;
+    outline: none;
+}
+
+.decoContainer {
+    position: absolute;
+    width: 60%;
+    height: 60vh;
+    left: 7%;
+    top: 11%;
+}
+
+.buttonContainer {
+    width: 100%;
+    height: auto;
+    margin-top: 0.8em;
+    display: flex;
+    gap: 24px;
+}
+
+.buttonContainer button {
+    width: 100%;
+    height: auto;
+    flex: 1;
+    padding: 24px;
+    border-radius: 24px;
+    border: 1px solid #0a3871;
+    color: #0a3871;
+    background-color: #d8dfe8;
+    font-size: 24px;
+}
+
+.buttonContainer button:nth-child(1) {
+    background-color: #0a3871;
+    color: white;
+}
+
+#botonCopiar {
+    padding: 24px 12px;
+    margin: 0px 0 10px 0;
+    width: 90%;
+    height: auto;
+    border-radius: 24px;
+    border: 1px solid #0a3871;
+    color: #0a3871;
+    background-color: #d8dfe8;
+    font-size: 20px;
+}
+
+.card {
+    position: absolute;
+    height: 88%;
+    width: 20%;
+    left: 76%;
+    top: 2%;
+    background-color: #fff;
+    display: flex;
+    border-radius: 24px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 24px 2px -8px rgba(0, 0, 0, 0.08);
+}
+
+.cardInvisible {
+    position: absolute;
+    height: 88%;
+    width: 20%;
+    left: 76%;
+    top: 2%;
+    background-color: #fff;
+    display: flex;
+    border-radius: 24px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.cardInvisible textarea {
+    width: 100%;
+    height: 100%;
+    margin: 1px;
+    font-size: 24px;
+}
+
+.tvector {
+    width: 100%;
+    font-size: 14px;
+}
+
+.card img {
+    height: 35%;
+    width: 100%;
+}
+
+#iconoV {
+    width: 16px;
+    height: 16px;
+}
+
+.invisibleObject {
+    display: none;
+}
+
+.visibleObject {
+    display: initial;
+}
+
+.texto {
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 700;
+    color: #343a40;
+    line-height: 120%;
+}
+
+#textoQuenocambia {
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    color: #495057;
+    line-height: 150%;
+}
+footer {
+    text-align: center;
+    font-size: 12px;
+}
+.copyright {
+    position: relative;
+}
+
+/*Tablets & iPads*/
+
+@media (max-width: 800px) {
+    .container {
+        width: 100%;
+        height: auto;
+    }
+
+    .decoContainer {
+        margin: 30px;
+    }
+
+    .column {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+    }
+
+    .logo {
+        position: absolute;
+        width: 120px;
+        height: 48px;
+        top: 1em;
+        left: -1.5em;
+    }
+    textarea {
+        width: 130%;
+        height: 85%;
+    }
+    .cardInvisible textarea {
+        width: 95%;
+        margin: 15px;
+    }
+
+    .buttonContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 130%;
+        gap: 8px;
+    }
+
+    #botonCopiar {
+        padding: 24px 8px;
+        margin: 70px 0 0 0;
+        width: 90%;
+        height: auto;
+    }
+
+    .card {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        height: 20%;
+        left: 6%;
+        top: 95%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .card img {
+        visibility: hidden;
+    }
+
+    .cardInvisible {
+        width: 90%;
+        height: 40%;
+        left: 6%;
+        top: 94%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .texto {
+        text-align: center;
+        line-height: 0;
+        height: 100%;
+    }
+
+    #textoQuenocambia {
+        margin: 0 0 85px 0;
+    }
+
+    .invisibleObject {
+        display: none;
+    }
+
+    .visibleObject {
+        display: initial;
+    }
+}
+
+/*telephone*/
+
+@media (max-width: 400px) {
+    textarea {
+        width: 130%;
+        height: 85%;
+    }
+    .tvector {
+        width: 120%;
+    }
+    #textoQuenocambia {
+        margin: 0 0 42px 0;
+    }
+    .texto {
+        height: auto;
+    }
+    .card {
+        width: 90%;
+        height: 20%;
+        left: 5%;
+        top: 103%;
+    }
+    .buttonContainer {
+        width: 115%;
+    }
+    .cardInvisible {
+        width: 90%;
+        height: 40%;
+        left: 5%;
+        top: 103%;
+    }
+    #botonCopiar {
+        padding: 24px 8px;
+        margin: 5px 0 0 0;
+        width: 90%;
+        height: auto;
+    }
+}

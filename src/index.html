@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/main.js">
+    <link rel="stylesheet" href="assets/reset.css">
+    <title>Encriptador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="column ">
+                <img class="logo" src="imagenes/Logo-1.png" alt="Logo">
+                <div class="decoContainer">
+                    <textarea placeholder="Ingrese el texto aquí" wrap="soft" id="textField"></textarea>
+                    <p class="tvector"> <span> <img id="iconoV" src="imagenes/Vector.svg" alt="vector" width="16x"
+                                height="16px"> </span> Solo letras minúsculas y sin acentos</p>
+                    <div class="buttonContainer">
+                        <button class="boton" onclick="buttonEvent(encryptText)">Encriptar</button>
+                        <button class="boton1" onclick="buttonEvent(decryptText)">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="column columnXs visibleObject" id="defaultContent">
+                <div class="card">
+                    <img src="imagenes/Muñeco.png" alt="Muñeco" class="muñeco">
+                    <h1 class="texto">Ningún mensaje fue encontrado</h1>
+                    <br>
+                    <h1 class="texto" id="textoQuenocambia">Ingrese el texto que desees encriptar o desencriptar</h1>
+                </div>
+            </div>
+            <div class="column columnXs invisibleObject" id="content">
+                <div class="cardInvisible">
+                    <textarea placeholder="Ingrese el texto aquÍ" wrap="soft" id="encryptField"></textarea>
+                    <button onclick="copyText()" class="boton" id="botonCopiar">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span class="copyright">&copy; Copyright Alura</apan>
+            <br>
+            <span class="copyright">2.022</span>
+    </footer>
+    <script src="assets/main.js"></script>
+</body>
+
+</html>
